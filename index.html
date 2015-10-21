@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+    
+        body{
+            margin:0;
+            padding:0;
+            background-color:maroon;
+
+        }
+        
+        
+        
+        .menu_dropdown::before{
+            
+            margin-left:.3em;
+            margin-right:.3em;
+            
+            float:left;
+            position:relative;
+            
+            
+            content:'\2303';
+            
+            top:-.2em;
+            transform: rotate(180deg);
+            
+            
+        }
+        
+        
+        .menu_dropdown{
+            width:100%;
+            height:1.3em;
+
+            background-color:#f9da0c;
+            cursor:pointer;
+            float:left;
+            
+        }
+    
+        .menu_dropdown:hover{
+            text-decoration: underline;
+        }
+        
+        
+        .menu_dropdown:focus + #cohort_content_class_02{
+            display:block;
+        }
+
+        .menu_dropdown:focus + #cohort_content_class_01{
+            display:block;
+        }
+        
+
+        
+        #cohort_content_class_01,#cohort_content_class_02{
+            display:none;
+            text-align:left;
+            vertical-align:middle;
+            width:100%;
+            float:left;
+            
+
+            background-color:#ffffff;
+
+
+        }
+    
+    
+    </style>
+    <title>dropdown example using div</title>
+</head>
+<body>
+    
+    <div tabindex="0"  class='menu_dropdown'> Cohort Class 2 (July 2015 - January 2016)</div>
+    
+    <div id='cohort_content_class_02'>
+        <ul>
+            <li>Adam Field</li>
+            <li>Patrick Patterson</li>
+            <li>Hani Ali</li>
+            <li>Hunter Lester</li>
+            <li>Ian Garoian</li>
+            <li>Alex Gutierrez</li>
+            <li>Raquel Garcia</li>
+            <li>Bill Ramirez</li>
+        </ul>
+    </div>
+    
+    <div tabindex="0"  class='menu_dropdown'>Cohort Class 1 (January 2015 - July 2015)</div>
+   
+    <div id='cohort_content_class_01'>
+        <ul>
+            <li>Arturo Ceballos</li>
+            <li>Vanessa Ceballos</li>
+            <li>Nick Myers</li>
+            <li>Sam Ramos</li>
+            <li>John Word</li>
+            <li>Jeremy Robles</li>
+            <li>John Sposato</li>
+            <li>Victor Perez</li>
+            
+        </ul>
+    </div>
+    
+    
+    
+    
+</body>
+</html>
